@@ -1,0 +1,2704 @@
+{
+  "name": "Fast X Food",
+  "currency": "USD",
+  "allergenTags": [
+    "gluten",
+    "dairy",
+    "eggs",
+    "peanuts",
+    "soy",
+    "sesame",
+    "mustard",
+    "pork"
+  ],
+  "menuPeriods": {
+    "breakfast": {
+      "categories": [
+        "cat-breakfast",
+        "cat-sides",
+        "cat-drinks",
+        "cat-sauces"
+      ]
+    },
+    "all_day": {
+      "categories": [
+        "cat-burgers",
+        "cat-chicken",
+        "cat-sides",
+        "cat-drinks",
+        "cat-desserts",
+        "cat-sauces",
+        "cat-combos",
+        "cat-kids"
+      ]
+    }
+  },
+  "ingredientLibrary": {
+    "ing-beef-patty": {
+      "name": "Beef Patty",
+      "allergens": [],
+      "macros": {
+        "cal": 280,
+        "fat": 22,
+        "protein": 19,
+        "carbs": 0
+      }
+    },
+    "ing-double-beef-patty": {
+      "name": "Double Beef Patty",
+      "allergens": [],
+      "macros": {
+        "cal": 560,
+        "fat": 44,
+        "protein": 38,
+        "carbs": 0
+      }
+    },
+    "ing-bun": {
+      "name": "Bun",
+      "allergens": [
+        "gluten",
+        "sesame"
+      ],
+      "macros": {
+        "cal": 150,
+        "fat": 3,
+        "protein": 4,
+        "carbs": 28
+      }
+    },
+    "ing-brioche-bun": {
+      "name": "Brioche Bun",
+      "allergens": [
+        "gluten",
+        "eggs",
+        "dairy"
+      ],
+      "macros": {
+        "cal": 180,
+        "fat": 5,
+        "protein": 5,
+        "carbs": 30
+      }
+    },
+    "ing-lettuce": {
+      "name": "Lettuce",
+      "allergens": [],
+      "macros": {
+        "cal": 5,
+        "fat": 0,
+        "protein": 0,
+        "carbs": 1
+      }
+    },
+    "ing-tomato": {
+      "name": "Tomato",
+      "allergens": [],
+      "macros": {
+        "cal": 5,
+        "fat": 0,
+        "protein": 0,
+        "carbs": 1
+      }
+    },
+    "ing-onion": {
+      "name": "Onion",
+      "allergens": [],
+      "macros": {
+        "cal": 10,
+        "fat": 0,
+        "protein": 0,
+        "carbs": 2
+      }
+    },
+    "ing-pickles": {
+      "name": "Pickles",
+      "allergens": [],
+      "macros": {
+        "cal": 5,
+        "fat": 0,
+        "protein": 0,
+        "carbs": 1
+      }
+    },
+    "ing-house-sauce": {
+      "name": "House Sauce",
+      "allergens": [
+        "eggs",
+        "mustard"
+      ],
+      "macros": {
+        "cal": 90,
+        "fat": 10,
+        "protein": 0,
+        "carbs": 1
+      }
+    },
+    "ing-ketchup": {
+      "name": "Ketchup",
+      "allergens": [],
+      "macros": {
+        "cal": 20,
+        "fat": 0,
+        "protein": 0,
+        "carbs": 5
+      }
+    },
+    "ing-mustard": {
+      "name": "Mustard",
+      "allergens": [
+        "mustard"
+      ],
+      "macros": {
+        "cal": 5,
+        "fat": 0,
+        "protein": 0,
+        "carbs": 0
+      }
+    },
+    "ing-extra-patty": {
+      "name": "Extra Patty",
+      "allergens": [],
+      "macros": {
+        "cal": 280,
+        "fat": 22,
+        "protein": 19,
+        "carbs": 0
+      }
+    },
+    "ing-bacon": {
+      "name": "Bacon",
+      "allergens": [
+        "pork"
+      ],
+      "macros": {
+        "cal": 80,
+        "fat": 6,
+        "protein": 6,
+        "carbs": 0
+      }
+    },
+    "ing-american-cheese": {
+      "name": "American Cheese",
+      "allergens": [
+        "dairy"
+      ],
+      "macros": {
+        "cal": 70,
+        "fat": 5,
+        "protein": 4,
+        "carbs": 1
+      }
+    },
+    "ing-american-cheese-x2": {
+      "name": "American Cheese (x2)",
+      "allergens": [
+        "dairy"
+      ],
+      "macros": {
+        "cal": 140,
+        "fat": 10,
+        "protein": 8,
+        "carbs": 2
+      }
+    },
+    "ing-jalapenos": {
+      "name": "Jalapenos",
+      "allergens": [],
+      "macros": {
+        "cal": 5,
+        "fat": 0,
+        "protein": 0,
+        "carbs": 1
+      }
+    },
+    "ing-caramelized-onions": {
+      "name": "Caramelized Onions",
+      "allergens": [],
+      "macros": {
+        "cal": 30,
+        "fat": 1,
+        "protein": 0,
+        "carbs": 5
+      }
+    },
+    "ing-crispy-onions": {
+      "name": "Crispy Onions",
+      "allergens": [
+        "gluten"
+      ],
+      "macros": {
+        "cal": 45,
+        "fat": 3,
+        "protein": 0,
+        "carbs": 4
+      }
+    },
+    "ing-garlic-aioli": {
+      "name": "Garlic Aioli",
+      "allergens": [
+        "eggs"
+      ],
+      "macros": {
+        "cal": 90,
+        "fat": 10,
+        "protein": 0,
+        "carbs": 1
+      }
+    },
+    "ing-fried-chicken-breast": {
+      "name": "Fried Chicken Breast",
+      "allergens": [
+        "gluten",
+        "eggs"
+      ],
+      "macros": {
+        "cal": 350,
+        "fat": 18,
+        "protein": 28,
+        "carbs": 16
+      }
+    },
+    "ing-grilled-chicken-breast": {
+      "name": "Grilled Chicken Breast",
+      "allergens": [],
+      "macros": {
+        "cal": 200,
+        "fat": 4,
+        "protein": 36,
+        "carbs": 0
+      }
+    },
+    "ing-coleslaw": {
+      "name": "Coleslaw",
+      "allergens": [
+        "eggs"
+      ],
+      "macros": {
+        "cal": 60,
+        "fat": 4,
+        "protein": 1,
+        "carbs": 6
+      }
+    },
+    "ing-mayo": {
+      "name": "Mayo",
+      "allergens": [
+        "eggs"
+      ],
+      "macros": {
+        "cal": 90,
+        "fat": 10,
+        "protein": 0,
+        "carbs": 0
+      }
+    },
+    "ing-fries": {
+      "name": "Fries",
+      "allergens": [],
+      "macros": {
+        "cal": 320,
+        "fat": 15,
+        "protein": 4,
+        "carbs": 43
+      }
+    },
+    "ing-cheese-sauce": {
+      "name": "Cheese Sauce",
+      "allergens": [
+        "dairy"
+      ],
+      "macros": {
+        "cal": 80,
+        "fat": 5,
+        "protein": 2,
+        "carbs": 6
+      }
+    },
+    "ing-bacon-bits": {
+      "name": "Bacon Bits",
+      "allergens": [
+        "pork"
+      ],
+      "macros": {
+        "cal": 40,
+        "fat": 3,
+        "protein": 3,
+        "carbs": 0
+      }
+    },
+    "ing-green-onion": {
+      "name": "Green Onion",
+      "allergens": [],
+      "macros": {
+        "cal": 3,
+        "fat": 0,
+        "protein": 0,
+        "carbs": 1
+      }
+    },
+    "ing-sour-cream": {
+      "name": "Sour Cream",
+      "allergens": [
+        "dairy"
+      ],
+      "macros": {
+        "cal": 30,
+        "fat": 3,
+        "protein": 0,
+        "carbs": 1
+      }
+    },
+    "ing-veggie-patty": {
+      "name": "Veggie Patty",
+      "allergens": [
+        "soy",
+        "gluten"
+      ],
+      "macros": {
+        "cal": 220,
+        "fat": 12,
+        "protein": 14,
+        "carbs": 18
+      }
+    },
+    "ing-pineapple-ring": {
+      "name": "Pineapple Ring",
+      "allergens": [],
+      "macros": {
+        "cal": 15,
+        "fat": 0,
+        "protein": 0,
+        "carbs": 4
+      }
+    },
+    "ing-teriyaki-glaze": {
+      "name": "Teriyaki Glaze",
+      "allergens": [
+        "soy"
+      ],
+      "macros": {
+        "cal": 40,
+        "fat": 0,
+        "protein": 1,
+        "carbs": 9
+      }
+    },
+    "ing-scrambled-eggs": {
+      "name": "Scrambled Eggs",
+      "allergens": [
+        "eggs"
+      ],
+      "macros": {
+        "cal": 140,
+        "fat": 10,
+        "protein": 10,
+        "carbs": 1
+      }
+    },
+    "ing-sausage-patty": {
+      "name": "Sausage Patty",
+      "allergens": [
+        "pork"
+      ],
+      "macros": {
+        "cal": 170,
+        "fat": 14,
+        "protein": 8,
+        "carbs": 1
+      }
+    },
+    "ing-flour-tortilla": {
+      "name": "Flour Tortilla",
+      "allergens": [
+        "gluten"
+      ],
+      "macros": {
+        "cal": 160,
+        "fat": 4,
+        "protein": 4,
+        "carbs": 28
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "cat-burgers",
+      "name": "Burgers",
+      "items": [
+        {
+          "id": "item-classic-smash-burger",
+          "name": "Classic Smash Burger",
+          "description": "Single beef patty, fresh veggies, house sauce",
+          "basePrice": 799,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "popular"
+          ],
+          "totalCalories": 565,
+          "totalProtein": 23,
+          "totalFat": 35,
+          "totalCarbs": 33,
+          "allergens": [
+            "eggs",
+            "gluten",
+            "mustard",
+            "sesame"
+          ],
+          "dietaryTags": [],
+          "ingredients": [
+            {
+              "name": "Beef Patty",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-beef-patty"
+            },
+            {
+              "name": "Bun",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-bun"
+            },
+            {
+              "name": "Lettuce",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-lettuce"
+            },
+            {
+              "name": "Tomato",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-tomato"
+            },
+            {
+              "name": "Onion",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-onion"
+            },
+            {
+              "name": "Pickles",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-pickles"
+            },
+            {
+              "name": "House Sauce",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-house-sauce"
+            },
+            {
+              "name": "Ketchup",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-ketchup"
+            },
+            {
+              "name": "Mustard",
+              "type": "toggle",
+              "default": false,
+              "price": 0,
+              "id": "ing-mustard"
+            },
+            {
+              "name": "Extra Patty",
+              "type": "toggle",
+              "default": false,
+              "price": 350,
+              "id": "ing-extra-patty"
+            },
+            {
+              "name": "Bacon",
+              "type": "toggle",
+              "default": false,
+              "price": 150,
+              "id": "ing-bacon"
+            },
+            {
+              "name": "American Cheese",
+              "type": "toggle",
+              "default": false,
+              "price": 75,
+              "id": "ing-american-cheese"
+            },
+            {
+              "name": "Jalapenos",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-jalapenos"
+            }
+          ],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/classic-smash-burger.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/classic-smash-burger.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/classic-smash-burger.webp"
+        },
+        {
+          "id": "item-double-smash-burger",
+          "name": "Double Smash Burger",
+          "description": "Two smashed patties, double cheese, caramelized onions",
+          "basePrice": 1149,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "popular",
+            "high-protein"
+          ],
+          "totalCalories": 975,
+          "totalProtein": 50,
+          "totalFat": 68,
+          "totalCarbs": 37,
+          "allergens": [
+            "dairy",
+            "eggs",
+            "gluten",
+            "mustard",
+            "sesame"
+          ],
+          "dietaryTags": [],
+          "ingredients": [
+            {
+              "name": "Double Beef Patty",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-double-beef-patty"
+            },
+            {
+              "name": "Bun",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-bun"
+            },
+            {
+              "name": "American Cheese (x2)",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-american-cheese-x2"
+            },
+            {
+              "name": "Caramelized Onions",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-caramelized-onions"
+            },
+            {
+              "name": "Pickles",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-pickles"
+            },
+            {
+              "name": "House Sauce",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-house-sauce"
+            },
+            {
+              "name": "Lettuce",
+              "type": "toggle",
+              "default": false,
+              "price": 0,
+              "id": "ing-lettuce"
+            },
+            {
+              "name": "Tomato",
+              "type": "toggle",
+              "default": false,
+              "price": 0,
+              "id": "ing-tomato"
+            },
+            {
+              "name": "Bacon",
+              "type": "toggle",
+              "default": false,
+              "price": 150,
+              "id": "ing-bacon"
+            },
+            {
+              "name": "Extra Patty",
+              "type": "toggle",
+              "default": false,
+              "price": 350,
+              "id": "ing-extra-patty"
+            },
+            {
+              "name": "Jalapenos",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-jalapenos"
+            }
+          ],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/double-smash-burger.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/double-smash-burger.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/double-smash-burger.webp"
+        },
+        {
+          "id": "item-bacon-cheeseburger",
+          "name": "Bacon Cheeseburger",
+          "description": "Beef patty, crispy bacon, melted American cheese, classic fixings",
+          "basePrice": 999,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "popular",
+            "high-protein"
+          ],
+          "totalCalories": 625,
+          "totalProtein": 33,
+          "totalFat": 36,
+          "totalCarbs": 39,
+          "allergens": [
+            "dairy",
+            "gluten",
+            "pork",
+            "sesame"
+          ],
+          "dietaryTags": [],
+          "ingredients": [
+            {
+              "name": "Beef Patty",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-beef-patty"
+            },
+            {
+              "name": "Bun",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-bun"
+            },
+            {
+              "name": "Bacon",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-bacon"
+            },
+            {
+              "name": "American Cheese",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-american-cheese"
+            },
+            {
+              "name": "Lettuce",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-lettuce"
+            },
+            {
+              "name": "Tomato",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-tomato"
+            },
+            {
+              "name": "Onion",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-onion"
+            },
+            {
+              "name": "Pickles",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-pickles"
+            },
+            {
+              "name": "Ketchup",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-ketchup"
+            },
+            {
+              "name": "Mustard",
+              "type": "toggle",
+              "default": false,
+              "price": 0,
+              "id": "ing-mustard"
+            },
+            {
+              "name": "Extra Patty",
+              "type": "toggle",
+              "default": false,
+              "price": 350,
+              "id": "ing-extra-patty"
+            },
+            {
+              "name": "Jalapenos",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-jalapenos"
+            }
+          ],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/bacon-cheeseburger.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/bacon-cheeseburger.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/bacon-cheeseburger.webp"
+        },
+        {
+          "id": "item-veggie-burger",
+          "name": "Veggie Burger",
+          "description": "Plant-based patty, lettuce, tomato, onion, garlic aioli on a bun",
+          "basePrice": 999,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "vegetarian",
+            "under-500-cal"
+          ],
+          "totalCalories": 445,
+          "totalProtein": 19,
+          "totalFat": 22,
+          "totalCarbs": 50,
+          "allergens": [
+            "eggs",
+            "gluten",
+            "sesame",
+            "soy"
+          ],
+          "dietaryTags": [
+            "vegetarian"
+          ],
+          "ingredients": [
+            {
+              "name": "Veggie Patty",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-veggie-patty"
+            },
+            {
+              "name": "Bun",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-bun"
+            },
+            {
+              "name": "Lettuce",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-lettuce"
+            },
+            {
+              "name": "Tomato",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-tomato"
+            },
+            {
+              "name": "Onion",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-onion"
+            },
+            {
+              "name": "Garlic Aioli",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-garlic-aioli"
+            },
+            {
+              "name": "Pickles",
+              "type": "toggle",
+              "default": false,
+              "price": 0,
+              "id": "ing-pickles"
+            },
+            {
+              "name": "American Cheese",
+              "type": "toggle",
+              "default": false,
+              "price": 75,
+              "id": "ing-american-cheese"
+            },
+            {
+              "name": "Jalapenos",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-jalapenos"
+            }
+          ],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/veggie-burger.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/veggie-burger.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/veggie-burger.webp"
+        },
+        {
+          "id": "item-summer-bbq-burger",
+          "name": "Summer BBQ Burger",
+          "description": "Double patty, pineapple ring, teriyaki glaze, crispy onions \u2014 limited time!",
+          "basePrice": 1349,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "seasonal",
+            "limited-time",
+            "popular",
+            "high-protein"
+          ],
+          "availableUntil": "2026-09-01",
+          "totalCalories": 800,
+          "totalProtein": 42,
+          "totalFat": 50,
+          "totalCarbs": 46,
+          "allergens": [
+            "gluten",
+            "sesame",
+            "soy"
+          ],
+          "dietaryTags": [],
+          "ingredients": [
+            {
+              "name": "Double Beef Patty",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-double-beef-patty"
+            },
+            {
+              "name": "Bun",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-bun"
+            },
+            {
+              "name": "Pineapple Ring",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-pineapple-ring"
+            },
+            {
+              "name": "Teriyaki Glaze",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-teriyaki-glaze"
+            },
+            {
+              "name": "Crispy Onions",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-crispy-onions"
+            },
+            {
+              "name": "Lettuce",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-lettuce"
+            },
+            {
+              "name": "Bacon",
+              "type": "toggle",
+              "default": false,
+              "price": 150,
+              "id": "ing-bacon"
+            }
+          ],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/summer-bbq-burger.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/summer-bbq-burger.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/summer-bbq-burger.webp"
+        }
+      ],
+      "image": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-burgers.webp",
+      "imageFull": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-burgers.webp"
+    },
+    {
+      "id": "cat-chicken",
+      "name": "Chicken",
+      "items": [
+        {
+          "id": "item-crispy-chicken-sandwich",
+          "name": "Crispy Chicken Sandwich",
+          "description": "Buttermilk fried chicken breast, slaw, pickles",
+          "basePrice": 1049,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "high-protein",
+            "spicy"
+          ],
+          "totalCalories": 685,
+          "totalProtein": 34,
+          "totalFat": 37,
+          "totalCarbs": 53,
+          "allergens": [
+            "dairy",
+            "eggs",
+            "gluten"
+          ],
+          "dietaryTags": [],
+          "ingredients": [
+            {
+              "name": "Fried Chicken Breast",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-fried-chicken-breast"
+            },
+            {
+              "name": "Brioche Bun",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-brioche-bun"
+            },
+            {
+              "name": "Coleslaw",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-coleslaw"
+            },
+            {
+              "name": "Pickles",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-pickles"
+            },
+            {
+              "name": "Mayo",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-mayo"
+            },
+            {
+              "name": "Lettuce",
+              "type": "toggle",
+              "default": false,
+              "price": 0,
+              "id": "ing-lettuce"
+            },
+            {
+              "name": "Tomato",
+              "type": "toggle",
+              "default": false,
+              "price": 0,
+              "id": "ing-tomato"
+            },
+            {
+              "name": "American Cheese",
+              "type": "toggle",
+              "default": false,
+              "price": 75,
+              "id": "ing-american-cheese"
+            },
+            {
+              "name": "Bacon",
+              "type": "toggle",
+              "default": false,
+              "price": 150,
+              "id": "ing-bacon"
+            },
+            {
+              "name": "Jalapenos",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-jalapenos"
+            }
+          ],
+          "choices": [
+            {
+              "name": "Spice Level",
+              "required": true,
+              "options": [
+                {
+                  "name": "Mild",
+                  "price": 0
+                },
+                {
+                  "name": "Nashville Hot",
+                  "price": 50
+                },
+                {
+                  "name": "Inferno",
+                  "price": 75
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/crispy-chicken-sandwich.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/crispy-chicken-sandwich.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/crispy-chicken-sandwich.webp"
+        },
+        {
+          "id": "item-grilled-chicken-sandwich",
+          "name": "Grilled Chicken Sandwich",
+          "description": "Grilled chicken breast, garlic aioli, lettuce, tomato on brioche",
+          "basePrice": 1099,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "high-protein",
+            "under-500-cal"
+          ],
+          "totalCalories": 480,
+          "totalProtein": 41,
+          "totalFat": 19,
+          "totalCarbs": 33,
+          "allergens": [
+            "dairy",
+            "eggs",
+            "gluten"
+          ],
+          "dietaryTags": [],
+          "ingredients": [
+            {
+              "name": "Grilled Chicken Breast",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-grilled-chicken-breast"
+            },
+            {
+              "name": "Brioche Bun",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-brioche-bun"
+            },
+            {
+              "name": "Lettuce",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-lettuce"
+            },
+            {
+              "name": "Tomato",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-tomato"
+            },
+            {
+              "name": "Garlic Aioli",
+              "type": "levels",
+              "default": true,
+              "price": 0,
+              "id": "ing-garlic-aioli"
+            },
+            {
+              "name": "American Cheese",
+              "type": "toggle",
+              "default": false,
+              "price": 75,
+              "id": "ing-american-cheese"
+            },
+            {
+              "name": "Bacon",
+              "type": "toggle",
+              "default": false,
+              "price": 150,
+              "id": "ing-bacon"
+            },
+            {
+              "name": "Jalapenos",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-jalapenos"
+            }
+          ],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/grilled-chicken-sandwich.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/grilled-chicken-sandwich.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/grilled-chicken-sandwich.webp"
+        },
+        {
+          "id": "item-chicken-nuggets",
+          "name": "Chicken Nuggets",
+          "description": "All-white-meat nuggets, golden fried",
+          "basePrice": 0,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [
+            {
+              "name": "6 Piece",
+              "price": 549
+            },
+            {
+              "name": "10 Piece",
+              "price": 799
+            },
+            {
+              "name": "20 Piece",
+              "price": 1399
+            }
+          ],
+          "tags": [
+            "popular",
+            "kids-friendly",
+            "under-500-cal"
+          ],
+          "totalCalories": 270,
+          "totalProtein": 15,
+          "totalFat": 14,
+          "totalCarbs": 18,
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "dietaryTags": [],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Dipping Sauce",
+              "required": true,
+              "options": [
+                {
+                  "name": "BBQ",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-bbq-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-bbq-dip.webp"
+                },
+                {
+                  "name": "Ranch",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-ranch-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-ranch-dip.webp"
+                },
+                {
+                  "name": "Honey Mustard",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-honey-mustard-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-honey-mustard-dip.webp"
+                },
+                {
+                  "name": "Buffalo",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-buffalo-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-buffalo-dip.webp"
+                },
+                {
+                  "name": "Sweet & Sour",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-sweet-sour-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-sweet-sour-dip.webp"
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/chicken-nuggets.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/chicken-nuggets.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/chicken-nuggets.webp"
+        },
+        {
+          "id": "item-chicken-tenders",
+          "name": "Chicken Tenders",
+          "description": "Hand-breaded chicken tenders, crispy and golden",
+          "basePrice": 0,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [
+            {
+              "name": "3 Piece",
+              "price": 599
+            },
+            {
+              "name": "5 Piece",
+              "price": 849
+            },
+            {
+              "name": "8 Piece",
+              "price": 1199
+            }
+          ],
+          "tags": [
+            "popular",
+            "under-500-cal"
+          ],
+          "totalCalories": 300,
+          "totalProtein": 24,
+          "totalFat": 15,
+          "totalCarbs": 18,
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "dietaryTags": [],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Dipping Sauce",
+              "required": true,
+              "options": [
+                {
+                  "name": "BBQ",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-bbq-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-bbq-dip.webp"
+                },
+                {
+                  "name": "Ranch",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-ranch-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-ranch-dip.webp"
+                },
+                {
+                  "name": "Honey Mustard",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-honey-mustard-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-honey-mustard-dip.webp"
+                },
+                {
+                  "name": "Buffalo",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-buffalo-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-buffalo-dip.webp"
+                },
+                {
+                  "name": "Sweet & Sour",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-sweet-sour-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-sweet-sour-dip.webp"
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/chicken-tenders.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/chicken-tenders.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/chicken-tenders.webp"
+        }
+      ],
+      "image": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-chicken.webp",
+      "imageFull": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-chicken.webp"
+    },
+    {
+      "id": "cat-sides",
+      "name": "Sides",
+      "items": [
+        {
+          "id": "item-classic-fries",
+          "name": "Classic Fries",
+          "description": "Crispy golden fries, seasoned with sea salt",
+          "basePrice": 0,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [
+            {
+              "name": "Small",
+              "price": 299
+            },
+            {
+              "name": "Medium",
+              "price": 399
+            },
+            {
+              "name": "Large",
+              "price": 499
+            }
+          ],
+          "tags": [
+            "popular",
+            "kids-friendly",
+            "vegan"
+          ],
+          "totalCalories": 380,
+          "totalProtein": 5,
+          "totalFat": 18,
+          "totalCarbs": 50,
+          "allergens": [],
+          "dietaryTags": [
+            "vegan",
+            "gluten-free",
+            "vegetarian"
+          ],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/classic-fries.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/classic-fries.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/classic-fries.webp"
+        },
+        {
+          "id": "item-loaded-cheese-fries",
+          "name": "Loaded Cheese Fries",
+          "description": "Fries smothered in cheese sauce, bacon bits, green onion",
+          "basePrice": 699,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "popular"
+          ],
+          "totalCalories": 443,
+          "totalProtein": 9,
+          "totalFat": 23,
+          "totalCarbs": 50,
+          "allergens": [
+            "dairy",
+            "pork"
+          ],
+          "dietaryTags": [],
+          "ingredients": [
+            {
+              "name": "Fries",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-fries"
+            },
+            {
+              "name": "Cheese Sauce",
+              "type": "levels",
+              "default": true,
+              "price": 100,
+              "id": "ing-cheese-sauce"
+            },
+            {
+              "name": "Bacon Bits",
+              "type": "levels",
+              "default": true,
+              "price": 75,
+              "id": "ing-bacon-bits"
+            },
+            {
+              "name": "Green Onion",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-green-onion"
+            },
+            {
+              "name": "Sour Cream",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-sour-cream"
+            },
+            {
+              "name": "Jalapenos",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-jalapenos"
+            }
+          ],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/loaded-cheese-fries.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/loaded-cheese-fries.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/loaded-cheese-fries.webp"
+        },
+        {
+          "id": "item-onion-rings",
+          "name": "Onion Rings",
+          "description": "Beer-battered onion rings, crispy and golden",
+          "basePrice": 0,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [
+            {
+              "name": "Small",
+              "price": 349
+            },
+            {
+              "name": "Medium",
+              "price": 449
+            },
+            {
+              "name": "Large",
+              "price": 549
+            }
+          ],
+          "tags": [
+            "vegetarian",
+            "vegan"
+          ],
+          "totalCalories": 350,
+          "totalProtein": 4,
+          "totalFat": 20,
+          "totalCarbs": 40,
+          "allergens": [
+            "gluten"
+          ],
+          "dietaryTags": [
+            "vegan",
+            "vegetarian"
+          ],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/onion-rings.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/onion-rings.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/onion-rings.webp"
+        },
+        {
+          "id": "item-mac-and-cheese",
+          "name": "Mac & Cheese",
+          "description": "Creamy three-cheese mac, made fresh",
+          "basePrice": 549,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "kids-friendly",
+            "vegetarian"
+          ],
+          "totalCalories": 380,
+          "totalProtein": 14,
+          "totalFat": 18,
+          "totalCarbs": 42,
+          "allergens": [
+            "dairy",
+            "gluten"
+          ],
+          "dietaryTags": [
+            "vegetarian"
+          ],
+          "ingredients": [
+            {
+              "name": "Bacon Bits",
+              "type": "toggle",
+              "default": false,
+              "price": 75,
+              "id": "ing-bacon-bits"
+            },
+            {
+              "name": "Jalapenos",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-jalapenos"
+            }
+          ],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/mac-and-cheese.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/mac-and-cheese.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/mac-and-cheese.webp"
+        },
+        {
+          "id": "item-side-salad",
+          "name": "Side Salad",
+          "description": "Mixed greens, cherry tomatoes, croutons, choice of dressing",
+          "basePrice": 449,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "under-500-cal",
+            "vegetarian"
+          ],
+          "totalCalories": 150,
+          "totalProtein": 4,
+          "totalFat": 8,
+          "totalCarbs": 16,
+          "allergens": [
+            "gluten"
+          ],
+          "dietaryTags": [
+            "vegetarian"
+          ],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Dressing",
+              "required": true,
+              "options": [
+                {
+                  "name": "Ranch",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-ranch-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-ranch-dip.webp"
+                },
+                {
+                  "name": "Balsamic Vinaigrette",
+                  "price": 0
+                },
+                {
+                  "name": "No Dressing",
+                  "price": 0
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/side-salad.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/side-salad.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/side-salad.webp"
+        }
+      ],
+      "image": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-sides.webp",
+      "imageFull": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-sides.webp"
+    },
+    {
+      "id": "cat-drinks",
+      "name": "Drinks",
+      "items": [
+        {
+          "id": "item-fountain-drink",
+          "name": "Fountain Drink",
+          "description": "Ice-cold fountain sodas, your choice of flavor",
+          "basePrice": 0,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [
+            {
+              "name": "Small",
+              "price": 199
+            },
+            {
+              "name": "Medium",
+              "price": 249
+            },
+            {
+              "name": "Large",
+              "price": 299
+            }
+          ],
+          "tags": [
+            "under-500-cal",
+            "vegan"
+          ],
+          "totalCalories": 210,
+          "totalProtein": 0,
+          "totalFat": 0,
+          "totalCarbs": 54,
+          "allergens": [],
+          "dietaryTags": [
+            "vegan",
+            "gluten-free"
+          ],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Flavor",
+              "required": true,
+              "options": [
+                {
+                  "name": "Coca-Cola",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-coca-cola.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-coca-cola.webp"
+                },
+                {
+                  "name": "Diet Coke",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-diet-coke.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-diet-coke.webp"
+                },
+                {
+                  "name": "Sprite",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-sprite.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-sprite.webp"
+                },
+                {
+                  "name": "Dr Pepper",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-dr-pepper.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-dr-pepper.webp"
+                },
+                {
+                  "name": "Fanta Orange",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-fanta-orange.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-fanta-orange.webp"
+                },
+                {
+                  "name": "Lemonade",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-lemonade.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-lemonade.webp"
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/fountain-drink.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/fountain-drink.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/fountain-drink.webp"
+        },
+        {
+          "id": "item-bottled-water",
+          "name": "Bottled Water",
+          "description": "16.9 oz purified water",
+          "basePrice": 149,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "under-500-cal",
+            "vegan"
+          ],
+          "totalCalories": 0,
+          "totalProtein": 0,
+          "totalFat": 0,
+          "totalCarbs": 0,
+          "allergens": [],
+          "dietaryTags": [
+            "vegan",
+            "gluten-free"
+          ],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/bottled-water.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/bottled-water.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/bottled-water.webp"
+        },
+        {
+          "id": "item-milkshake",
+          "name": "Milkshake",
+          "description": "Thick and creamy hand-spun milkshakes",
+          "basePrice": 0,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [
+            {
+              "name": "Regular",
+              "price": 499
+            },
+            {
+              "name": "Large",
+              "price": 599
+            }
+          ],
+          "tags": [
+            "popular",
+            "kids-friendly",
+            "vegetarian"
+          ],
+          "totalCalories": 550,
+          "totalProtein": 10,
+          "totalFat": 22,
+          "totalCarbs": 78,
+          "allergens": [
+            "dairy"
+          ],
+          "dietaryTags": [
+            "vegetarian"
+          ],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Flavor",
+              "required": true,
+              "options": [
+                {
+                  "name": "Vanilla",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-vanilla-shake.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-vanilla-shake.webp"
+                },
+                {
+                  "name": "Chocolate",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-chocolate-shake.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-chocolate-shake.webp"
+                },
+                {
+                  "name": "Strawberry",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-strawberry-shake.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-strawberry-shake.webp"
+                },
+                {
+                  "name": "Cookies & Cream",
+                  "price": 50,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-cookies-cream-shake.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-cookies-cream-shake.webp"
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/milkshake.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/milkshake.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/milkshake.webp"
+        },
+        {
+          "id": "item-iced-tea",
+          "name": "Iced Tea",
+          "description": "Fresh-brewed iced tea, sweet or unsweet",
+          "basePrice": 0,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [
+            {
+              "name": "Small",
+              "price": 179
+            },
+            {
+              "name": "Medium",
+              "price": 229
+            },
+            {
+              "name": "Large",
+              "price": 279
+            }
+          ],
+          "tags": [
+            "under-500-cal",
+            "vegan"
+          ],
+          "totalCalories": 90,
+          "totalProtein": 0,
+          "totalFat": 0,
+          "totalCarbs": 23,
+          "allergens": [],
+          "dietaryTags": [
+            "vegan",
+            "gluten-free"
+          ],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Style",
+              "required": true,
+              "options": [
+                {
+                  "name": "Sweet",
+                  "price": 0
+                },
+                {
+                  "name": "Unsweet",
+                  "price": 0
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/iced-tea.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/iced-tea.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/iced-tea.webp"
+        }
+      ],
+      "image": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-drinks.webp",
+      "imageFull": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-drinks.webp"
+    },
+    {
+      "id": "cat-desserts",
+      "name": "Desserts",
+      "items": [
+        {
+          "id": "item-apple-pie",
+          "name": "Apple Pie",
+          "description": "Warm apple pie with cinnamon sugar topping",
+          "basePrice": 349,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "kids-friendly",
+            "under-500-cal",
+            "vegan"
+          ],
+          "totalCalories": 250,
+          "totalProtein": 2,
+          "totalFat": 12,
+          "totalCarbs": 34,
+          "allergens": [
+            "gluten"
+          ],
+          "dietaryTags": [
+            "vegan",
+            "vegetarian"
+          ],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Serve Style",
+              "required": true,
+              "options": [
+                {
+                  "name": "Classic",
+                  "price": 0
+                },
+                {
+                  "name": "A La Mode",
+                  "price": 129
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/apple-pie.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/apple-pie.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/apple-pie.webp"
+        },
+        {
+          "id": "item-chocolate-brownie",
+          "name": "Chocolate Brownie",
+          "description": "Warm chocolate brownie, rich and fudgy",
+          "basePrice": 399,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "under-500-cal"
+          ],
+          "totalCalories": 320,
+          "totalProtein": 4,
+          "totalFat": 16,
+          "totalCarbs": 42,
+          "allergens": [
+            "dairy",
+            "eggs",
+            "gluten"
+          ],
+          "dietaryTags": [],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Serve Style",
+              "required": true,
+              "options": [
+                {
+                  "name": "Classic",
+                  "price": 0
+                },
+                {
+                  "name": "A La Mode",
+                  "price": 129
+                },
+                {
+                  "name": "With Whipped Cream",
+                  "price": 79
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/chocolate-brownie.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/chocolate-brownie.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/chocolate-brownie.webp"
+        },
+        {
+          "id": "item-sundae",
+          "name": "Sundae",
+          "description": "Vanilla soft serve with your choice of topping",
+          "basePrice": 449,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "kids-friendly",
+            "under-500-cal",
+            "vegetarian"
+          ],
+          "totalCalories": 340,
+          "totalProtein": 6,
+          "totalFat": 14,
+          "totalCarbs": 48,
+          "allergens": [
+            "dairy"
+          ],
+          "dietaryTags": [
+            "vegetarian"
+          ],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Topping",
+              "required": true,
+              "options": [
+                {
+                  "name": "Hot Fudge",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-sundae-hot-fudge.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-sundae-hot-fudge.webp"
+                },
+                {
+                  "name": "Caramel",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-sundae-caramel.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-sundae-caramel.webp"
+                },
+                {
+                  "name": "Strawberry",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-sundae-strawberry.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-sundae-strawberry.webp"
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/sundae.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/sundae.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/sundae.webp"
+        }
+      ],
+      "image": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-desserts.webp",
+      "imageFull": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-desserts.webp"
+    },
+    {
+      "id": "cat-sauces",
+      "name": "Extra Sauces",
+      "items": [
+        {
+          "id": "item-bbq-sauce",
+          "name": "BBQ Sauce",
+          "description": "Classic smoky BBQ dipping sauce",
+          "basePrice": 49,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "vegan"
+          ],
+          "totalCalories": 45,
+          "totalProtein": 0,
+          "totalFat": 0,
+          "totalCarbs": 11,
+          "allergens": [],
+          "dietaryTags": [
+            "vegan",
+            "gluten-free",
+            "vegetarian"
+          ],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/bbq-sauce.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/bbq-sauce.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/bbq-sauce.webp"
+        },
+        {
+          "id": "item-ranch",
+          "name": "Ranch",
+          "description": "Creamy buttermilk ranch",
+          "basePrice": 49,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [],
+          "totalCalories": 70,
+          "totalProtein": 0,
+          "totalFat": 7,
+          "totalCarbs": 1,
+          "allergens": [
+            "dairy",
+            "eggs"
+          ],
+          "dietaryTags": [
+            "vegetarian",
+            "gluten-free"
+          ],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/ranch-sauce.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/ranch-sauce.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/ranch-sauce.webp"
+        },
+        {
+          "id": "item-honey-mustard-sauce",
+          "name": "Honey Mustard",
+          "description": "Sweet and tangy honey mustard",
+          "basePrice": 49,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [],
+          "totalCalories": 60,
+          "totalProtein": 0,
+          "totalFat": 3,
+          "totalCarbs": 8,
+          "allergens": [
+            "eggs",
+            "mustard"
+          ],
+          "dietaryTags": [
+            "vegetarian",
+            "gluten-free"
+          ],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/honey-mustard-sauce.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/honey-mustard-sauce.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/honey-mustard-sauce.webp"
+        },
+        {
+          "id": "item-buffalo-sauce",
+          "name": "Buffalo Sauce",
+          "description": "Tangy cayenne buffalo sauce",
+          "basePrice": 49,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "vegan"
+          ],
+          "totalCalories": 25,
+          "totalProtein": 0,
+          "totalFat": 2,
+          "totalCarbs": 1,
+          "allergens": [],
+          "dietaryTags": [
+            "vegan",
+            "gluten-free",
+            "vegetarian"
+          ],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/buffalo-sauce.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/buffalo-sauce.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/buffalo-sauce.webp"
+        }
+      ],
+      "image": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-sauces.webp",
+      "imageFull": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-sauces.webp"
+    },
+    {
+      "id": "cat-combos",
+      "name": "Combo Meals",
+      "items": [
+        {
+          "id": "item-classic-combo",
+          "name": "Classic Combo",
+          "description": "Classic Smash Burger + fries + drink",
+          "basePrice": 1199,
+          "isCombo": true,
+          "comboItems": [
+            {
+              "itemId": "item-classic-smash-burger",
+              "label": "Your Burger"
+            },
+            {
+              "itemId": "item-classic-fries",
+              "label": "Your Side"
+            },
+            {
+              "itemId": "item-fountain-drink",
+              "label": "Your Drink"
+            }
+          ],
+          "sizes": [],
+          "tags": [
+            "bestseller"
+          ],
+          "savingsVsIndividual": 248,
+          "totalCalories": 1155,
+          "totalProtein": 28,
+          "totalFat": 53,
+          "totalCarbs": 137,
+          "allergens": [
+            "eggs",
+            "gluten",
+            "mustard",
+            "sesame"
+          ],
+          "dietaryTags": [],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/classic-combo.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/classic-combo.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/classic-combo.webp"
+        },
+        {
+          "id": "item-double-smash-combo",
+          "name": "Double Smash Combo",
+          "description": "Double Smash Burger + fries + drink",
+          "basePrice": 1449,
+          "isCombo": true,
+          "comboItems": [
+            {
+              "itemId": "item-double-smash-burger",
+              "label": "Your Burger"
+            },
+            {
+              "itemId": "item-classic-fries",
+              "label": "Your Side"
+            },
+            {
+              "itemId": "item-fountain-drink",
+              "label": "Your Drink"
+            }
+          ],
+          "sizes": [],
+          "tags": [
+            "bestseller"
+          ],
+          "savingsVsIndividual": 348,
+          "totalCalories": 1565,
+          "totalProtein": 55,
+          "totalFat": 86,
+          "totalCarbs": 141,
+          "allergens": [
+            "dairy",
+            "eggs",
+            "gluten",
+            "mustard",
+            "sesame"
+          ],
+          "dietaryTags": [],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/double-smash-combo.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/double-smash-combo.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/double-smash-combo.webp"
+        },
+        {
+          "id": "item-chicken-combo",
+          "name": "Chicken Combo",
+          "description": "Crispy Chicken Sandwich + fries + drink",
+          "basePrice": 1349,
+          "isCombo": true,
+          "comboItems": [
+            {
+              "itemId": "item-crispy-chicken-sandwich",
+              "label": "Your Chicken"
+            },
+            {
+              "itemId": "item-classic-fries",
+              "label": "Your Side"
+            },
+            {
+              "itemId": "item-fountain-drink",
+              "label": "Your Drink"
+            }
+          ],
+          "sizes": [],
+          "tags": [
+            "popular"
+          ],
+          "savingsVsIndividual": 348,
+          "totalCalories": 1275,
+          "totalProtein": 39,
+          "totalFat": 55,
+          "totalCarbs": 157,
+          "allergens": [
+            "dairy",
+            "eggs",
+            "gluten"
+          ],
+          "dietaryTags": [],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/chicken-combo.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/chicken-combo.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/chicken-combo.webp"
+        },
+        {
+          "id": "item-tenders-combo",
+          "name": "Tenders Combo",
+          "description": "Chicken Tenders (5pc) + fries + drink",
+          "basePrice": 1249,
+          "isCombo": true,
+          "comboItems": [
+            {
+              "itemId": "item-chicken-tenders",
+              "label": "Your Tenders"
+            },
+            {
+              "itemId": "item-classic-fries",
+              "label": "Your Side"
+            },
+            {
+              "itemId": "item-fountain-drink",
+              "label": "Your Drink"
+            }
+          ],
+          "sizes": [],
+          "tags": [
+            "popular"
+          ],
+          "savingsVsIndividual": 298,
+          "totalCalories": 890,
+          "totalProtein": 29,
+          "totalFat": 33,
+          "totalCarbs": 122,
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "dietaryTags": [],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/tenders-combo.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/tenders-combo.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/tenders-combo.webp"
+        },
+        {
+          "id": "item-bacon-cheese-combo",
+          "name": "Bacon Cheese Combo",
+          "description": "Bacon Cheeseburger + fries + drink",
+          "basePrice": 1349,
+          "isCombo": true,
+          "comboItems": [
+            {
+              "itemId": "item-bacon-cheeseburger",
+              "label": "Your Burger"
+            },
+            {
+              "itemId": "item-classic-fries",
+              "label": "Your Side"
+            },
+            {
+              "itemId": "item-fountain-drink",
+              "label": "Your Drink"
+            }
+          ],
+          "sizes": [],
+          "tags": [
+            "popular"
+          ],
+          "savingsVsIndividual": 298,
+          "totalCalories": 1215,
+          "totalProtein": 38,
+          "totalFat": 54,
+          "totalCarbs": 143,
+          "allergens": [
+            "dairy",
+            "gluten",
+            "pork",
+            "sesame"
+          ],
+          "dietaryTags": [],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/bacon-cheese-combo.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/bacon-cheese-combo.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/bacon-cheese-combo.webp"
+        }
+      ],
+      "image": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-combos.webp",
+      "imageFull": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-combos.webp"
+    },
+    {
+      "id": "cat-breakfast",
+      "name": "Breakfast",
+      "items": [
+        {
+          "id": "item-breakfast-sandwich",
+          "name": "Breakfast Sandwich",
+          "description": "Scrambled eggs, sausage patty, American cheese on a toasted bun",
+          "basePrice": 599,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "popular"
+          ],
+          "totalCalories": 540,
+          "totalProtein": 26,
+          "totalFat": 32,
+          "totalCarbs": 31,
+          "allergens": [
+            "dairy",
+            "eggs",
+            "gluten",
+            "pork",
+            "sesame"
+          ],
+          "dietaryTags": [],
+          "ingredients": [
+            {
+              "name": "Bun",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-bun"
+            },
+            {
+              "name": "Scrambled Eggs",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-scrambled-eggs"
+            },
+            {
+              "name": "Sausage Patty",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-sausage-patty"
+            },
+            {
+              "name": "American Cheese",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-american-cheese"
+            },
+            {
+              "name": "Bacon",
+              "type": "toggle",
+              "default": false,
+              "price": 150,
+              "id": "ing-bacon"
+            },
+            {
+              "name": "Jalapenos",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-jalapenos"
+            }
+          ],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/breakfast-sandwich.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/breakfast-sandwich.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/breakfast-sandwich.webp"
+        },
+        {
+          "id": "item-breakfast-burrito",
+          "name": "Breakfast Burrito",
+          "description": "Scrambled eggs, sausage, cheese, onions wrapped in a flour tortilla",
+          "basePrice": 699,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "popular"
+          ],
+          "totalCalories": 540,
+          "totalProtein": 26,
+          "totalFat": 28,
+          "totalCarbs": 32,
+          "allergens": [
+            "dairy",
+            "eggs",
+            "gluten",
+            "pork"
+          ],
+          "dietaryTags": [],
+          "ingredients": [
+            {
+              "name": "Flour Tortilla",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-flour-tortilla"
+            },
+            {
+              "name": "Scrambled Eggs",
+              "type": "fixed",
+              "default": true,
+              "price": 0,
+              "id": "ing-scrambled-eggs"
+            },
+            {
+              "name": "Sausage Patty",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-sausage-patty"
+            },
+            {
+              "name": "American Cheese",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-american-cheese"
+            },
+            {
+              "name": "Onion",
+              "type": "toggle",
+              "default": true,
+              "price": 0,
+              "id": "ing-onion"
+            },
+            {
+              "name": "Jalapenos",
+              "type": "toggle",
+              "default": false,
+              "price": 50,
+              "id": "ing-jalapenos"
+            },
+            {
+              "name": "Bacon",
+              "type": "toggle",
+              "default": false,
+              "price": 150,
+              "id": "ing-bacon"
+            },
+            {
+              "name": "House Sauce",
+              "type": "levels",
+              "default": false,
+              "price": 0,
+              "id": "ing-house-sauce"
+            }
+          ],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/breakfast-burrito.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/breakfast-burrito.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/breakfast-burrito.webp"
+        },
+        {
+          "id": "item-hash-browns",
+          "name": "Hash Browns",
+          "description": "Crispy shredded potato hash browns",
+          "basePrice": 249,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "under-500-cal",
+            "vegan"
+          ],
+          "totalCalories": 230,
+          "totalProtein": 2,
+          "totalFat": 14,
+          "totalCarbs": 24,
+          "allergens": [],
+          "dietaryTags": [
+            "vegan",
+            "gluten-free",
+            "vegetarian"
+          ],
+          "ingredients": [],
+          "choices": [],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/hash-browns.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/hash-browns.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/hash-browns.webp"
+        },
+        {
+          "id": "item-breakfast-coffee",
+          "name": "Coffee",
+          "description": "Fresh-brewed premium roast coffee",
+          "basePrice": 0,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [
+            {
+              "name": "Small",
+              "price": 179
+            },
+            {
+              "name": "Medium",
+              "price": 219
+            },
+            {
+              "name": "Large",
+              "price": 259
+            }
+          ],
+          "tags": [
+            "under-500-cal",
+            "vegan"
+          ],
+          "totalCalories": 5,
+          "totalProtein": 0,
+          "totalFat": 0,
+          "totalCarbs": 0,
+          "allergens": [],
+          "dietaryTags": [
+            "vegan",
+            "gluten-free"
+          ],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Preparation",
+              "required": true,
+              "options": [
+                {
+                  "name": "Black",
+                  "price": 0
+                },
+                {
+                  "name": "With Cream",
+                  "price": 0
+                },
+                {
+                  "name": "With Cream & Sugar",
+                  "price": 0
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/breakfast-coffee.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/breakfast-coffee.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/breakfast-coffee.webp"
+        }
+      ],
+      "image": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-breakfast.webp",
+      "imageFull": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-breakfast.webp"
+    },
+    {
+      "id": "cat-kids",
+      "name": "Kids Meals",
+      "items": [
+        {
+          "id": "item-kids-burger-meal",
+          "name": "Kids Burger Meal",
+          "description": "Mini smash burger, small fries, apple slices, and a drink",
+          "basePrice": 649,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "kids-friendly"
+          ],
+          "totalCalories": 520,
+          "totalProtein": 16,
+          "totalFat": 22,
+          "totalCarbs": 66,
+          "allergens": [
+            "gluten",
+            "sesame"
+          ],
+          "dietaryTags": [],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Drink",
+              "required": true,
+              "options": [
+                {
+                  "name": "Coca-Cola",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-coca-cola.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-coca-cola.webp"
+                },
+                {
+                  "name": "Sprite",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-sprite.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-sprite.webp"
+                },
+                {
+                  "name": "Apple Juice",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-apple-juice.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-apple-juice.webp"
+                },
+                {
+                  "name": "Milk",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-milk.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-milk.webp"
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/kids-burger-meal.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/kids-burger-meal.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/kids-burger-meal.webp"
+        },
+        {
+          "id": "item-kids-nuggets-meal",
+          "name": "Kids Nuggets Meal",
+          "description": "4-piece chicken nuggets, small fries, apple slices, and a drink",
+          "basePrice": 599,
+          "isCombo": false,
+          "comboItems": [],
+          "sizes": [],
+          "tags": [
+            "kids-friendly",
+            "under-500-cal"
+          ],
+          "totalCalories": 460,
+          "totalProtein": 14,
+          "totalFat": 18,
+          "totalCarbs": 60,
+          "allergens": [
+            "eggs",
+            "gluten"
+          ],
+          "dietaryTags": [],
+          "ingredients": [],
+          "choices": [
+            {
+              "name": "Drink",
+              "required": true,
+              "options": [
+                {
+                  "name": "Coca-Cola",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-coca-cola.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-coca-cola.webp"
+                },
+                {
+                  "name": "Sprite",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-sprite.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-sprite.webp"
+                },
+                {
+                  "name": "Apple Juice",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-apple-juice.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-apple-juice.webp"
+                },
+                {
+                  "name": "Milk",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-milk.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-milk.webp"
+                }
+              ]
+            },
+            {
+              "name": "Dipping Sauce",
+              "required": true,
+              "options": [
+                {
+                  "name": "BBQ",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-bbq-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-bbq-dip.webp"
+                },
+                {
+                  "name": "Ranch",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-ranch-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-ranch-dip.webp"
+                },
+                {
+                  "name": "Honey Mustard",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-honey-mustard-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-honey-mustard-dip.webp"
+                },
+                {
+                  "name": "Sweet & Sour",
+                  "price": 0,
+                  "image": "https://storage.googleapis.com/fastxfood-assets/options-medium/opt-sweet-sour-dip.webp",
+                  "imageThumb": "https://storage.googleapis.com/fastxfood-assets/options-thumb/opt-sweet-sour-dip.webp"
+                }
+              ]
+            }
+          ],
+          "image": "https://storage.googleapis.com/fastxfood-assets/items-medium/kids-nuggets-meal.webp",
+          "imageThumb": "https://storage.googleapis.com/fastxfood-assets/items-thumb/kids-nuggets-meal.webp",
+          "imageFull": "https://storage.googleapis.com/fastxfood-assets/items-full/kids-nuggets-meal.webp"
+        }
+      ],
+      "image": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-kids.webp",
+      "imageFull": "https://storage.googleapis.com/fastxfood-assets/banners-full/banner-kids.webp"
+    }
+  ]
+}
