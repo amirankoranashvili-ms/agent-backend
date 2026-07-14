@@ -10,6 +10,34 @@ def test_health(client):
     assert r.json()["status"] == "ok"
 
 
+# ── GET /v1/promo/validate ──
+
+
+def test_promo_valid(client):
+    r = client.get("/v1/promo/validate", params={"code": "SAVE10"})
+    assert r.status_code == 200
+    data = r.json()
+    assert data["valid"] is True
+    assert data["code"] == "SAVE10"
+    assert data["type"] == "percent"
+    assert "description" in data
+
+
+def test_promo_valid_case_insensitive(client):
+    r = client.get("/v1/promo/validate", params={"code": "save10"})
+    assert r.json()["valid"] is True
+    assert r.json()["code"] == "SAVE10"
+
+
+def test_promo_invalid(client):
+    r = client.get("/v1/promo/validate", params={"code": "BADCODE"})
+    assert r.status_code == 200
+    data = r.json()
+    assert data["valid"] is False
+    assert data["code"] == "BADCODE"
+    assert "type" not in data
+
+
 # ── GET /v1/kitchen/wait-time ──
 
 

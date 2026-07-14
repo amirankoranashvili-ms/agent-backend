@@ -125,6 +125,16 @@ def check_availability(item_id: str):
     return {"item_id": item_id, "available": True}
 
 
+# ---------- 4b. GET /v1/promo/validate ----------
+
+@app.get("/v1/promo/validate", tags=["promo"])
+def validate_promo(code: str = Query(...)):
+    promo = PROMO_CODES.get(code.upper())
+    if not promo:
+        return {"valid": False, "code": code}
+    return {"valid": True, "code": code.upper(), "type": promo["type"], "description": promo["description"]}
+
+
 # ---------- 5. POST /v1/combos/check ----------
 
 class ComboCheckRequest(BaseModel):
