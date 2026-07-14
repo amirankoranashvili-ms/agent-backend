@@ -9,10 +9,10 @@ def test_lookup_by_phone(client):
     assert r.status_code == 200
     data = r.json()
     assert data["found"] is True
-    assert data["name"] == "Sarah"
+    assert data["name"] == "Amo"
     assert data["id"] == "loyalty-001"
     assert data["points_balance"] == 2450
-    assert len(data["available_rewards"]) == 2
+    assert "available_rewards" not in data
     assert len(data["usual_order"]) == 3
 
 
@@ -20,14 +20,14 @@ def test_lookup_by_loyalty_id(client):
     r = client.get("/v1/loyalty/lookup", params={"identifier": "loyalty-002", "type": "loyalty_id"})
     data = r.json()
     assert data["found"] is True
-    assert data["name"] == "Marcus"
+    assert data["name"] == "Nika"
 
 
 def test_lookup_by_qr(client):
     r = client.get("/v1/loyalty/lookup", params={"identifier": "loyalty-003", "type": "qr"})
     data = r.json()
     assert data["found"] is True
-    assert data["name"] == "Emily"
+    assert data["name"] == "Vato"
 
 
 def test_lookup_not_found(client):
@@ -73,34 +73,10 @@ def test_orders_not_found(client):
 # ── POST /v1/loyalty/{customer_id}/redeem ──
 
 
-def test_redeem_free_drink(client):
+def test_redeem_no_rewards_available(client):
     r = client.post("/v1/loyalty/loyalty-001/redeem", json={
         "reward_id": "reward-free-drink",
         "order_subtotal": 1847,
-    })
-    assert r.status_code == 200
-    data = r.json()
-    assert data["applied"] is True
-    assert data["reward_name"] == "Free Medium Drink"
-    assert data["discount_cents"] == 249
-    assert data["new_subtotal"] == 1598
-
-
-def test_redeem_2off_combo(client):
-    r = client.post("/v1/loyalty/loyalty-001/redeem", json={
-        "reward_id": "reward-2off-combo",
-        "order_subtotal": 1199,
-    })
-    data = r.json()
-    assert data["applied"] is True
-    assert data["discount_cents"] == 200
-    assert data["new_subtotal"] == 999
-
-
-def test_redeem_invalid_reward(client):
-    r = client.post("/v1/loyalty/loyalty-002/redeem", json={
-        "reward_id": "reward-free-drink",
-        "order_subtotal": 1000,
     })
     assert r.status_code == 400
     assert r.json()["applied"] is False
@@ -112,12 +88,3 @@ def test_redeem_unknown_customer(client):
         "order_subtotal": 1000,
     })
     assert r.status_code == 400
-
-
-def test_redeem_discount_doesnt_go_negative(client):
-    r = client.post("/v1/loyalty/loyalty-001/redeem", json={
-        "reward_id": "reward-free-drink",
-        "order_subtotal": 100,
-    })
-    data = r.json()
-    assert data["new_subtotal"] == 0

@@ -45,10 +45,10 @@ def test_menu_unavailable_item_marked_false(client):
     r = client.get("/v1/menu")
     for cat in r.json()["categories"]:
         for item in cat["items"]:
-            if item["id"] == "item-summer-bbq-burger":
+            if item["id"] == "item-milkshake":
                 assert item["available"] is False
                 return
-    raise AssertionError("item-summer-bbq-burger not found in menu")
+    raise AssertionError("item-milkshake not found in menu")
 
 
 # ── GET /v1/menu/categories ──
@@ -238,6 +238,6 @@ def test_item_detail_not_found(client):
 
 
 def test_item_detail_unavailable_item(client):
-    r = client.get("/v1/menu/items/item-summer-bbq-burger")
+    r = client.get("/v1/menu/items/item-milkshake")
     assert r.status_code == 200
     assert r.json()["available"] is False
