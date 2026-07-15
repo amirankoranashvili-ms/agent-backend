@@ -120,6 +120,18 @@ def get_item(item_id: str, branch_id: str = Query("")):
     return menu_data.build_item_detail(item)
 
 
+# ---------- 3b. GET /v1/availability/unavailable ----------
+
+@app.get("/v1/availability/unavailable", tags=["availability"])
+def get_unavailable_items():
+    return {
+        "unavailable_items": [
+            {"item_id": item_id, "reason": reason}
+            for item_id, reason in UNAVAILABLE_ITEMS.items()
+        ]
+    }
+
+
 # ---------- 4. GET /v1/availability/{item_id} ----------
 
 @app.get("/v1/availability/{item_id}", tags=["availability"])
